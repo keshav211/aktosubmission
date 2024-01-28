@@ -8,15 +8,6 @@ session_url = "cmr14egm4v65cu1alqt0xcq1u6bqfpre1.oast.fun"
 full_url = f"https://{session_url}"
 
 
-def convert_to_ist(server_time_str, server_timezone='UTC'):
-    # Parse the server time string
-    server_time = datetime.strptime(server_time_str, '%Y-%m-%d %H:%M:%S')
-    server_time = pytz.timezone(server_timezone).localize(server_time)
-
-    # Convert to IST timezone
-    ist_time = server_time.astimezone(pytz.timezone('Asia/Kolkata'))
-    return ist_time.strftime('%Y-%m-%d %H:%M:%S')
-
 @app.route('/api/getURL', methods=['GET'])
 def get_url():
     return jsonify({'url': full_url})
