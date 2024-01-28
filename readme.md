@@ -13,7 +13,6 @@ Before you begin, ensure you have met the following requirements:
 - Go (Golang) environment set up, as `interact.sh` is a Go-based application.
 - An instance of `interact.sh` running (adjust the URLs in the code accordingly).
 
-
 ## Running interact.sh
 
 To run interact.sh, you can use the following command:
@@ -23,8 +22,6 @@ To run interact.sh, you can use the following command:
 ```
 
 This will start the interact.sh server. Make note of the output, especially the server URL, as you'll need this for your Flask application.
-
-
 
 ## Installation and Setup
 
@@ -51,7 +48,7 @@ This will start the interact.sh server. Make note of the output, especially the 
 
 ## Running the Flask Application
 
-Copy the address in generated from the interact.sh terminal in the url part in the flask app.
+Copy the address generated from the interact.sh terminal into the URL part in the Flask app.
 
 Run the application directly on your machine:
 
@@ -88,4 +85,3 @@ Now, the application is accessible at `http://localhost:5000`.
 2. **GET `/api/getInteractions`**
    
    Takes the URL of the testing server and returns information about its interactions. Optional timestamp limits can be provided.
-
