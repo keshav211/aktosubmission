@@ -17,10 +17,6 @@ def get_interactions():
     start_timestamp = request.args.get('start', None)
     end_timestamp = request.args.get('end', None)
 
-    if start_timestamp:
-        start_timestamp = convert_to_ist(start_timestamp)
-    if end_timestamp:
-        end_timestamp = convert_to_ist(end_timestamp)
 
     # Assuming 'interactions-endpoint' is a valid endpoint for interact.sh
     response = requests.get(f"{full_url}/interactions-endpoint", params={
