@@ -30,8 +30,8 @@ This will start the interact.sh server. Make note of the output, especially the 
    Clone this repository to your local machine:
 
    ```bash
-   git clone [URL to the repository]
-   cd [repository name]
+   git clone https://github.com/keshav211/aktosubmission.git
+
    ```
 
 2. **Install Dependencies**
